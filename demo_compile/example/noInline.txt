@@ -1,0 +1,106 @@
+after walk expr [0xc00050e780]
+.   NAME-main.a g(1) l(4) x(0) class(PAUTO) esc(no) tc(1) used int
+after walk expr [0xc000512280]
+.   LITERAL-1 l(4) tc(1) int
+after walk expr [0xc0004eb880]
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.a g(1) l(4) x(0) class(PAUTO) esc(no) tc(1) used int
+.   .   LITERAL-1 l(4) tc(1) int
+after walk expr [0xc00050e870]
+.   NAME-main.b g(2) l(5) x(0) class(PAUTO) esc(no) tc(1) used int
+after walk expr [0xc000512300]
+.   LITERAL-2 l(5) tc(1) int
+after walk expr [0xc0004eba80]
+.   AS l(5) colas(true) tc(1)
+.   .   NAME-main.b g(2) l(5) x(0) class(PAUTO) esc(no) tc(1) used int
+.   .   LITERAL-2 l(5) tc(1) int
+after walk expr [0xc000512380]
+.   LITERAL-true tc(1) main.true bool
+after walk expr [0xc00050e960]
+.   NAME-main.add l(11) x(0) class(PFUNC) tc(1) used FUNC-func(int, int)
+after walk expr [0xc00050e780]
+.   NAME-main.a g(1) l(4) x(0) class(PAUTO) esc(no) tc(1) used int
+after walk expr [0xc00050e870]
+.   NAME-main.b g(2) l(5) x(0) class(PAUTO) esc(no) tc(1) used int
+after walk expr [0xc0004ebd80]
+.   CALLFUNC l(7) tc(1) hascall
+.   .   NAME-main.add l(11) x(0) class(PFUNC) tc(1) used FUNC-func(int, int)
+.   CALLFUNC-rlist
+.   .   NAME-main.a g(1) l(4) x(0) class(PAUTO) esc(no) tc(1) used int
+
+.   .   NAME-main.b g(2) l(5) x(0) class(PAUTO) esc(no) tc(1) used int
+after walk expr [0xc0000c0000]
+.   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk expr [0xc00050ea50]
+.   NAME-main.a g(1) l(11) x(0) class(PPARAM) esc(no) tc(1) used int
+after walk expr [0xc00050eb40]
+.   NAME-main.b g(2) l(11) x(8) class(PPARAM) esc(no) tc(1) used int
+after walk expr [0xc000512180]
+.   ADD l(12) tc(1) int
+.   .   NAME-main.a g(1) l(11) x(0) class(PPARAM) esc(no) tc(1) used int
+.   .   NAME-main.b g(2) l(11) x(8) class(PPARAM) esc(no) tc(1) used int
+after walk expr [0xc0000ae700]
+.   AS l(12) tc(1)
+.   .   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   ADD l(12) tc(1) int
+.   .   .   NAME-main.a g(1) l(11) x(0) class(PPARAM) esc(no) tc(1) used int
+.   .   .   NAME-main.b g(2) l(11) x(8) class(PPARAM) esc(no) tc(1) used int
+after walk expr [0xc0000c0000]
+.   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk expr [0xc0004f3950]
+.   NAME-runtime.printlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000ae900]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0004f3a40]
+.   NAME-runtime.printunlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000aeb80]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printunlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0004f3950]
+.   NAME-runtime.printlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000ae900]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0004f2e10]
+.   NAME-runtime.printint x(0) class(PFUNC) tc(1) used FUNC-func(int64)
+after walk expr [0xc0000c0000]
+.   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk expr [0xc0000aea00]
+.   CONVNOP l(12) tc(1) int64
+.   .   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk expr [0xc0000ae980]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printint x(0) class(PFUNC) tc(1) used FUNC-func(int64)
+.   CALLFUNC-rlist
+.   .   CONVNOP l(12) tc(1) int64
+.   .   .   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk expr [0xc0004f3770]
+.   NAME-runtime.printnl x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000aeb00]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printnl x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0004f3a40]
+.   NAME-runtime.printunlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000aeb80]
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-runtime.printunlock x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000aec00]
+.   EMPTY l(12) tc(1)
+after walk expr [0xc0000aec00]
+.   EMPTY-init
+.   .   CALLFUNC l(12) tc(1) hascall
+.   .   .   NAME-runtime.printlock x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   .   CALLFUNC l(12) tc(1) hascall
+.   .   .   NAME-runtime.printint x(0) class(PFUNC) tc(1) used FUNC-func(int64)
+.   .   CALLFUNC-rlist
+.   .   .   CONVNOP l(12) tc(1) int64
+.   .   .   .   NAME-main..autotmp_2 l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   CALLFUNC l(12) tc(1) hascall
+.   .   .   NAME-runtime.printnl x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   .   CALLFUNC l(12) tc(1) hascall
+.   .   .   NAME-runtime.printunlock x(0) class(PFUNC) tc(1) used FUNC-func()
+.   EMPTY l(12) tc(1) hascall

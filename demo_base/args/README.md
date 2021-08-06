@@ -1,0 +1,1 @@
+golang的args是值拷贝，对golang传入的args修改并不能在args起效

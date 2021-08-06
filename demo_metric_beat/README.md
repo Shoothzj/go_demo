@@ -1,0 +1,2 @@
+## License
+Learning from metricbeat
