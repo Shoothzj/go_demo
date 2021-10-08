@@ -12,7 +12,7 @@ func HelloServer(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/hello", HelloServer)
-	err := http.ListenAndServeTLS(":443", "../static/server.crt", "../static/server.key", nil)
+	err := http.ListenAndServeTLS(":443", "cert/cert.pem", "cert/key.pem", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
