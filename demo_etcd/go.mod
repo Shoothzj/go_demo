@@ -1,6 +1,6 @@
 module go_demo/demo_etcd
 
-go 1.16
+go 1.17
 
 require (
 	go.etcd.io/etcd/api/v3 v3.5.0-alpha.0

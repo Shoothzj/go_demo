@@ -1,6 +1,6 @@
 module go_demo/demo_chaos
 
-go 1.16
+go 1.17
 
 require (
 	k8s.io/apimachinery v0.0.0-20191028221656-72ed19daf4bb

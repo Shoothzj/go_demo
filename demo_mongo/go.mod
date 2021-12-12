@@ -1,6 +1,6 @@
 module go_demo/demo_mongo
 
-go 1.16
+go 1.17
 
 require (
 	go_demo/component_mongo v0.0.0

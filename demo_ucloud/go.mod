@@ -1,6 +1,6 @@
 module go_demo/demo_ucloud
 
-go 1.16
+go 1.17
 
 require (
 	github.com/ucloud/ucloud-sdk-go v0.20.1

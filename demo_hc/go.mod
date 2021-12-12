@@ -1,6 +1,6 @@
 module go_demo/demo_hc
 
-go 1.16
+go 1.17
 
 require (
 	github.com/huaweicloud/huaweicloud-sdk-go-obs v3.21.1+incompatible // indirect

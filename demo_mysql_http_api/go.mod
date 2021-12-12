@@ -1,6 +1,6 @@
 module go_demo/demo_mysql_http_api
 
-go 1.16
+go 1.17
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0 // indirect

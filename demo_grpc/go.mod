@@ -1,6 +1,6 @@
 module go_demo/demo_grpc
 
-go 1.16
+go 1.17
 
 require (
 	github.com/golang/protobuf v1.4.3

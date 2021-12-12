@@ -1,6 +1,6 @@
 module go_demo/demo_routine_leak
 
-go 1.16
+go 1.17
 
 require (
 	go.uber.org/goleak v1.1.10 // indirect

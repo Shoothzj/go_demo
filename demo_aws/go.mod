@@ -1,6 +1,6 @@
 module go_demo/demo_aws
 
-go 1.16
+go 1.17
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.6.0
