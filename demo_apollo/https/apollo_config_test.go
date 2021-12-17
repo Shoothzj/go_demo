@@ -20,7 +20,7 @@ func TestGetConfigFromApolloHttp(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	intValue := client.GetIntValue("timeout", 0)
+	intValue := client.GetConfigAndInit(namespace).GetIntValue("timeout", 0)
 	fmt.Println(intValue)
 }
 
@@ -37,6 +37,6 @@ func TestGetConfigFromApolloHttps(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	value := client.GetValue("timeout")
+	value := client.GetConfigAndInit(namespace).GetValue("timeout")
 	fmt.Println(value)
 }
